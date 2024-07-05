@@ -43,7 +43,7 @@ const EducationItem = ({ item }) => {
 
 const Education = () => {
   return (
-    <section id="education" className="px-20 py-10 bg-white">
+    <section id="education" className="px-10 py-10 bg-white">
       <h2 className="text-3xl font-bold mb-8 text-start">Education</h2>
       <div className="space-y-8">
         {educationData.map((item, index) => (

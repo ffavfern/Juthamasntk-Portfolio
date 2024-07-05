@@ -75,12 +75,12 @@ const Skills = () => {
   });
 
   return (
-    <section id="skills" className="p-20 bg-white">
-      <h2 className="text-3xl font-bold mb-8">Skills</h2>
+    <section id="skills" className="px-4 sm:px-6 lg:px-8 py-10 bg-white">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 md:text-center">Skills</h2>
       <div className="space-y-8">
         <div ref={refFrontEnd}>
-          <h3 className="text-xl font-semibold mb-2">Front-End</h3>
-          <div className="grid grid-cols-3 gap-4">
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">Front-End</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {frontEndTrail.map((style, index) => (
               <animated.div
                 key={frontEndSkills[index].name}
@@ -100,8 +100,8 @@ const Skills = () => {
           </div>
         </div>
         <div ref={refBackEnd}>
-          <h3 className="text-xl font-semibold mb-2">Back-End</h3>
-          <div className="grid grid-cols-3 gap-4">
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">Back-End</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {backEndTrail.map((style, index) => (
               <animated.div
                 key={backEndSkills[index].name}
@@ -121,8 +121,8 @@ const Skills = () => {
           </div>
         </div>
         <div ref={refTools}>
-          <h3 className="text-xl font-semibold mb-2">Tools and Other Technologies</h3>
-          <div className="grid grid-cols-4 gap-4">
+          <h3 className="text-lg sm:text-xl font-semibold mb-2">Tools and Other Technologies</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {toolsTrail.map((style, index) => (
               <animated.div
                 key={toolsSkills[index].name}

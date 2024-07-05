@@ -36,16 +36,16 @@ const Projects = () => {
 
   return (
     <div className="projects-section" id="projects">
-      <h2 className="text-3xl font-bold mb-8 text-end">Projects</h2>
+      <h2 className="text-3xl font-bold mb-8 text-end md:text-center">Projects</h2>
       <div className="carousel-container">
         <div className="carousel py-8">
           {projectsData.map(project => (
-            <div key={project.id} className="carousel-item">
+            <div key={project.id} className="carousel-item flex-shrink-0 w-full sm:w-1/2 md:w-1/2 ">
               <div className="card">
                 <img src={project.image} alt={project.title} className="card-image"/>
                 <div className="card-content">
-                  <h3 className="card-title">{project.title}</h3>
-                  <p className="card-description">{project.description}</p>
+                  <h3 className="card-title sm:text-xl">{project.title}</h3>
+                  <p className="card-description sm:text-lg ">{project.description}</p>
                 </div>
               </div>
             </div>
@@ -57,3 +57,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+

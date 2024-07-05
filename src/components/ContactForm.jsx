@@ -78,14 +78,14 @@ const FormComponent = () => {
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-6 flex flex-row w-full items-center">
-        <h2 className="text-3xl font-bold mb-8 w-1/3">Get In Touch</h2>
-        <div className="bg-[#145C9E] p-10 rounded-lg shadow-md flex justify-between  w-full p-16">
-          <div className="w-1/2">
+      <div className="container mx-auto px-6 flex flex-col lg:flex-row w-full items-center">
+        <h2 className="text-3xl font-bold mb-8 lg:w-1/3 w-full text-center lg:text-left">Get In Touch</h2>
+        <div className="bg-[#145C9E] p-10 rounded-lg shadow-md flex flex-col lg:flex-row justify-between w-full">
+          <div className="lg:w-1/2 w-full mb-8 lg:mb-0">
             <h3 className="text-lg font-semibold text-white mb-4">Send Message</h3>
-            <FormComponent/>
+            <FormComponent />
           </div>
-          <div className="w-1/2 pl-10">
+          <div className="lg:w-1/2 w-full lg:pl-10">
             <h3 className="text-lg font-semibold text-white mb-4">Info</h3>
             <div className="flex items-center mb-4">
               <FontAwesomeIcon icon={faPhone} className="text-white bg-[#145C9E] rounded-full p-2 mr-3" />
